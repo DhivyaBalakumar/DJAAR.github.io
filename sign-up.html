@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initia l-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <div class="login">
+    <section class="signup-form">
+    <form method="POST" action="http://localhost:3002/signup">
+        <div class="head">
+            <h1>SIGN-UP</h1>
+        </div>
+        <div class="user">
+            <input type="text" id="name" name="name" placeholder="name" required>
+        </div>
+        <div class="user">
+            <input type="email" id= "email" name="email" placeholder="email" required>
+        </div>
+        <div class="user">
+            <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+        <div class="user">
+            <input type="password" name="cpass" id="cpass" placeholder="confirm password" required>
+        </div>
+        <div class="user">
+            <input type="phone number" name="phone" id="phone" placeholder="phone number" required>
+        </div>
+        <div class="text">
+            <label><input type="checkbox" >Remember me</label>
+        </div>
+        
+             <button type="submit" id="submit" class="btn">SIGN IN</button>
+    </form>
+    </section>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

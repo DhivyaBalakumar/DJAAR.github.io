@@ -1,0 +1,55 @@
+{
+  "name": "multi-node-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"node formmodel/model.js\" \"node models/user.js\" \"node models2/startup.js\" \"node app.js\" \"node app2.js\" \"node signindb.js\" \"node signinstdb.js\" \"node signupdb.js\" \"node signupstdb.js\" \"node startformdb.js\" \"node dashboard.js\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "ansi-regex": "^5.0.1",
+    "ansi-styles": "^4.3.0",
+    "chalk": "^4.1.2",
+    "cliui": "^8.0.1",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "date-fns": "^2.30.0",
+    "emoji-regex": "^8.0.0",
+    "escalade": "^3.1.2",
+    "get-caller-file": "^2.0.5",
+    "has-flag": "^4.0.0",
+    "is-fullwidth-code-point": "^3.0.0",
+    "lodash": "^4.17.21",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1",
+    "nodemailer": "^6.9.13",
+    "regenerator-runtime": "^0.14.1",
+    "require-directory": "^2.1.1",
+    "rxjs": "^7.8.1",
+    "shell-quote": "^1.8.1",
+    "spawn-command": "^0.0.2-1",
+    "speakeasy": "^2.0.0",
+    "string-width": "^4.2.3",
+    "strip-ansi": "^6.0.1",
+    "supports-color": "^8.1.1",
+    "tree-kill": "^1.2.2",
+    "tslib": "^2.6.2",
+    "wrap-ansi": "^7.0.0",
+    "y18n": "^5.0.8",
+    "yargs": "^17.7.2",
+    "yargs-parser": "^21.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishav2111/DJAR.git"
+  },
+  "author": "Dhivya Balakumar, Rishav Aditya, Akshitha To., D Jayanth, Abhinav Sinha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishav2111/DJAR/issues"
+  },
+  "homepage": "https://github.com/rishav2111/DJAR#readme",
+  "description": ""
+}

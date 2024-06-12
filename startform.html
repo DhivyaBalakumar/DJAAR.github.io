@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Information Form</title>
+  <link rel="stylesheet" href="startform.css">
+</head>
+<body>
+  <h1>Startup Information</h1>
+  <form id="startup-form" action="http://localhost:3006/submit-info" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="startupName">Startup Name:</label>
+      <input type="text" name="startupName" id="startupName" required>
+    </div>
+    <div class="form-group">
+      <label for="startupDomain">Startup Domain:</label>
+      <input type="text" name="startupDomain" id="startupDomain" required>
+    </div>
+    <div class="form-group">
+      <label for="ownerName">Owner Name:</label>
+      <input type="text" name="ownerName" id="ownerName" required>
+    </div>
+    <div class="form-group">
+      <label for="ownerEmail">Owner Email:</label>
+      <input type="email" name="ownerEmail" id="ownerEmail" required>
+    </div>
+    <div class="form-group">
+      <label for="ownerPhone">Phone Number:</label>
+      <input type="tel" name="ownerPhone" id="ownerPhone" required>
+    </div>
+    <div class="form-group">
+      <label for="startupDetails">Details of the Startup:</label>
+      <textarea name="startupDetails" id="startupDetails" rows="5" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="startupImage">Image/Poster (Optional):</label>
+      <input type="file" name="startupImage" id="startupImage" accept="image/*">
+    </div>
+    <div class="form-group">
+      <label for="fundingGoal">Funding Goal (Optional):</label>
+      <input type="number" name="fundingGoal" id="fundingGoal">
+    </div>
+    <div class="form-group">
+      <label for="pitchVideo">Pitch Video URL (Optional):</label>
+      <input type="url" name="pitchVideo" id="pitchVideo">
+    </div>
+    <div class="form-group">
+      <label for="prototypeLink">Prototype Link (Optional):</label>
+      <input type="url" name="prototypeLink" id="prototypeLink">
+    </div>
+    <button type="submit">Submit Information</button>
+  </form>
+  <script src="startform.js"></script>
+</body>
+</html>
